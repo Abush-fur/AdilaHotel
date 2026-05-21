@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Adila Hotel | Best Hotel in Hosana – Luxury & Comfort | Book Direct</title>
+  <meta name="description" content="Experience premium comfort at Adila Hotel in Hosana, Ethiopia. Modern rooms, fine dining, conference hall, and exceptional hospitality. Book direct via WhatsApp.">
+  <meta name="keywords" content="Hotel in Hosana, Best hotel in Hosana, Hotels in Hosana Ethiopia, Adila Hotel, luxury hotel Hosana">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Adila Hotel – Best Hotel in Hosana, Ethiopia">
+  <meta property="og:description" content="Modern luxury hotel in Hosana with premium rooms, restaurant, and conference facilities. Book directly for best rates.">
+  <meta property="og:image" content="https://placehold.co/1200x630/0B1F3B/C8A24A?text=Adila+Hotel+Hosana">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE_PLACEHOLDER">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      color: #1a1a2e;
+      background: #ffffff;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    /* Typography */
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      letter-spacing: -0.01em;
+      color: #0B1F3B;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #C8A24A;
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #0B1F3B;
+    }
+    .section {
+      padding: 5rem 0;
+    }
+    .section-gray {
+      background: #f8f9fa;
+    }
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #C8A24A;
+      color: #0B1F3B;
+    }
+    .btn-primary:hover {
+      background: #b8903a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(200, 162, 74, 0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #C8A24A;
+      color: #C8A24A;
+    }
+    .btn-outline:hover {
+      background: rgba(200, 162, 74, 0.1);
+      transform: translateY(-2px);
+    }
+    .btn-wa {
+      background: #25D366;
+      color: #ffffff;
+    }
+    .btn-wa:hover {
+      background: #128C7E;
+      transform: translateY(-2px);
+    }
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(11, 31, 59, 0.98);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.3s;
+      border-bottom: 1px solid rgba(200, 162, 74, 0.2);
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #C8A24A;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #C8A24A;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: #C8A24A;
+      cursor: pointer;
+    }
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(11, 31, 59, 0.75), rgba(11, 31, 59, 0.85)), url('https://placehold.co/1920x1080/0B1F3B/C8A24A?text=Adila+Hotel+Luxury+Suite') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding-top: 80px;
+    }
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      color: white;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1.5rem 0;
+      opacity: 0.9;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .feature-card {
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .feature-card i {
+      font-size: 2.5rem;
+      color: #C8A24A;
+      margin-bottom: 1rem;
+    }
+    .feature-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    /* Rooms Grid */
+    .rooms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .room-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .room-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+    }
+    .room-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .room-info {
+      padding: 1.5rem;
+    }
+    .room-amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .room-amenities span {
+      background: #f0f0f0;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+    }
+    .room-price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #C8A24A;
+      margin: 0.5rem 0;
+    }
+    /* Gallery Grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 12px;
+      aspect-ratio: 4/3;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+    .service-card i {
+      font-size: 2.5rem;
+      color: #C8A24A;
+      margin-bottom: 1rem;
+    }
+    /* Reviews */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .review-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .stars {
+      color: #C8A24A;
+      margin-bottom: 0.75rem;
+    }
+    /* Contact Form */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 0.9rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    /* Footer */
+    footer {
+      background: #0B1F3B;
+      color: #ffffff;
+      padding: 3rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-grid h4 {
+      color: #C8A24A;
+      margin-bottom: 1rem;
+    }
+    .social-links a {
+      color: white;
+      margin-right: 1rem;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #C8A24A;
+    }
+    /* Map */
+    .map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      height: 300px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.8rem; }
+      .section { padding: 3rem 0; }
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0B1F3B;
+        flex-direction: column;
+        padding: 1rem 0;
+        text-align: center;
+        gap: 1rem;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="logo"><i class="fas fa-hotel"></i> Adila Hotel</a>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Comfort & Elegance in the Heart of Hosana</h1>
+        <p>Modern rooms, restaurant, conference hall, and exceptional hospitality. Experience the finest hotel in Hosana, Ethiopia.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/251912345678?text=Hello%20Adila%20Hotel%2C%20I'd%20like%20to%20book%20a%20room" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Book via WhatsApp</a>
+          <a href="tel:+251912345678" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Premium Amenities</h2>
+      <div class="features-grid">
+        <div class="feature-card"><i class="fas fa-wifi"></i><h3>Free Wi-Fi</h3><p>High-speed internet throughout</p></div>
+        <div class="feature-card"><i class="fas fa-utensils"></i><h3>Restaurant</h3><p>Local & international cuisine</p></div>
+        <div class="feature-card"><i class="fas fa-chalkboard-user"></i><h3>Conference Hall</h3><p>Modern meeting facilities</p></div>
+        <div class="feature-card"><i class="fas fa-parking"></i><h3>Secure Parking</h3><p>24/7 monitored parking</p></div>
+        <div class="feature-card"><i class="fas fa-concierge-bell"></i><h3>Room Service</h3><p>24/7 in-room dining</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="section section-gray">
+    <div class="container">
+      <h2>Our Rooms & Suites</h2>
+      <div class="rooms-grid">
+        <div class="room-card"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Standard+Room" alt="Standard Room" class="room-img" loading="lazy"><div class="room-info"><h3>Standard Room</h3><p>Cozy room with modern amenities, ideal for solo travelers or couples.</p><div class="room-amenities"><span>Queen Bed</span><span>Air Conditioning</span><span>Smart TV</span></div><div class="room-price">From ETB 1,500/night</div><a href="https://wa.me/251912345678?text=I'd%20like%20to%20book%20a%20Standard%20Room%20at%20Adila%20Hotel" target="_blank" class="btn btn-wa" style="width:100%; justify-content:center; margin-top:1rem;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a></div></div>
+        <div class="room-card"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Deluxe+Room" alt="Deluxe Room" class="room-img" loading="lazy"><div class="room-info"><h3>Deluxe Room</h3><p>Spacious room with premium bedding and city views.</p><div class="room-amenities"><span>King Bed</span><span>Mini Bar</span><span>Workspace</span></div><div class="room-price">From ETB 2,200/night</div><a href="https://wa.me/251912345678?text=I'd%20like%20to%20book%20a%20Deluxe%20Room%20at%20Adila%20Hotel" target="_blank" class="btn btn-wa" style="width:100%; justify-content:center; margin-top:1rem;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a></div></div>
+        <div class="room-card"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Twin+Room" alt="Twin Room" class="room-img" loading="lazy"><div class="room-info"><h3>Twin Room</h3><p>Perfect for friends or colleagues with two comfortable beds.</p><div class="room-amenities"><span>2 Single Beds</span><span>City View</span><span>Ensuite Bath</span></div><div class="room-price">From ETB 1,900/night</div><a href="https://wa.me/251912345678?text=I'd%20like%20to%20book%20a%20Twin%20Room%20at%20Adila%20Hotel" target="_blank" class="btn btn-wa" style="width:100%; justify-content:center; margin-top:1rem;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a></div></div>
+        <div class="room-card"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Family+Suite" alt="Family Suite" class="room-img" loading="lazy"><div class="room-info"><h3>Family Suite</h3><p>Spacious suite with separate living area for families.</p><div class="room-amenities"><span>2 Bedrooms</span><span>Living Area</span><span>Kitchenette</span></div><div class="room-price">From ETB 3,500/night</div><a href="https://wa.me/251912345678?text=I'd%20like%20to%20book%20a%20Family%20Suite%20at%20Adila%20Hotel" target="_blank" class="btn btn-wa" style="width:100%; justify-content:center; margin-top:1rem;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Adila Hotel</h2>
+      <div style="max-width: 800px;"><p style="font-size:1.1rem; line-height:1.7;">Welcome to <strong>Adila Hotel</strong>, the premier <strong>hotel in Hosana, Ethiopia</strong>. We pride ourselves on offering exceptional comfort, immaculate cleanliness, and genuine Ethiopian hospitality. Our strategic location in Hosana provides easy access to the city's business district and cultural attractions. Whether you're visiting for business or leisure, our dedicated team ensures a memorable stay.</p><p style="margin-top:1rem;">Experience the <strong>best hotel in Hosana</strong> with modern amenities, traditional cuisine, and warm service that makes you feel at home.</p></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section-gray">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Hotel+Lobby" alt="Hotel Lobby" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Restaurant" alt="Restaurant" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Pool+Area" alt="Pool Area" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Conference+Hall" alt="Conference Hall" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Deluxe+Suite" alt="Deluxe Suite" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://placehold.co/600x400/0B1F3B/C8A24A?text=Spa+Wellness" alt="Spa Wellness" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><i class="fas fa-utensils"></i><h3>Restaurant & Dining</h3><p>Authentic Ethiopian dishes & international cuisine</p></div>
+        <div class="service-card"><i class="fas fa-chalkboard-user"></i><h3>Conference & Events</h3><p>Modern halls for business & celebrations</p></div>
+        <div class="service-card"><i class="fas fa-concierge-bell"></i><h3>Room Service</h3><p>24/7 in-room dining</p></div>
+        <div class="service-card"><i class="fas fa-hand-sparkles"></i><h3>Hospitality</h3><p>Warm Ethiopian welcome & 24hr front desk</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section section-gray">
+    <div class="container">
+      <h2>Guest Reviews</h2>
+      <div class="reviews-grid">
+        <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Absolutely amazing hotel! The staff went above and beyond. Best hotel in Hosana!"</p><strong>- Michael T.</strong></div>
+        <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Clean, comfortable, and great location. The restaurant food was delicious."</p><strong>- Selam D.</strong></div>
+        <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Perfect for business travel. Conference hall had everything we needed."</p><strong>- Tekle B.</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="section">
+    <div class="container">
+      <h2>Find Us</h2>
+      <div class="contact-grid" style="margin-bottom:2rem;">
+        <div><p><i class="fas fa-map-marker-alt" style="color:#C8A24A;"></i> <strong>Adila Hotel</strong><br>Kebele 03, near Hosana Stadium<br>Hosana, Central Ethiopia</p><p style="margin-top:1rem;"><i class="fas fa-phone-alt"></i> +251 91 234 5678<br><i class="fas fa-envelope"></i> reservations@adilahotel.com</p></div>
+        <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126653.71767527407!2d37.746235!3d7.164156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b2342f6c0b9e95%3A0xe2a3a9b5c8d4f2a7!2sHosana%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Booking Section -->
+  <section id="contact" class="section section-gray">
+    <div class="container">
+      <h2>Book Your Stay</h2>
+      <div class="contact-grid">
+        <form id="bookingForm">
+          <div class="form-group"><label>Full Name</label><input type="text" id="name" required></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" required></div>
+          <div class="form-group"><label>Check-in Date</label><input type="date" id="checkin" required></div>
+          <div class="form-group"><label>Check-out Date</label><input type="date" id="checkout" required></div>
+          <div class="form-group"><label>Room Type</label><select id="roomType"><option>Standard Room</option><option>Deluxe Room</option><option>Twin Room</option><option>Family Suite</option></select></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Book via WhatsApp</button>
+        </form>
+        <div><div style="background:#0B1F3B; color:white; padding:2rem; border-radius:12px; text-align:center;"><i class="fas fa-phone-alt" style="font-size:2rem; color:#C8A24A;"></i><h3 style="color:#C8A24A; margin-top:1rem;">Call Us Directly</h3><p style="margin:1rem 0;">For immediate assistance</p><a href="tel:+251912345678" class="btn btn-outline" style="border-color:#C8A24A; color:#C8A24A;">Call Now</a></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Adila Hotel</h4><p>Best hotel in Hosana, Ethiopia. Luxury, comfort, and exceptional hospitality.</p></div>
+      <div><h4>Quick Links</h4><ul style="list-style:none;"><li><a href="#home" style="color:white; text-decoration:none;">Home</a></li><li><a href="#rooms" style="color:white; text-decoration:none;">Rooms</a></li><li><a href="#contact" style="color:white; text-decoration:none;">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><p><i class="fas fa-phone"></i> +251 91 234 5678<br><i class="fas fa-envelope"></i> info@adilahotel.com<br><i class="fas fa-map-marker-alt"></i> Hosana, Ethiopia</p></div>
+      <div><h4>Follow Us</h4><div class="social-links"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+    </div>
+    <hr style="border-color:rgba(200,162,74,0.3); margin:1rem 0;"><p style="text-align:center; opacity:0.7;">© 2025 Adila Hotel | Best Hotel in Hosana, Ethiopia</p>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox"><span class="lightbox-close">&times;</span><img id="lightboxImg" src="" alt=""></div>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === "#") return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('active');
+      }
+    });
+  });
+
+  // Lightbox gallery
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  galleryItems.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.classList.add('active');
+      lightboxImg.src = img.src;
+    });
+  });
+  lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+
+  // Form to WhatsApp
+  const bookingForm = document.getElementById('bookingForm');
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const roomType = document.getElementById('roomType').value;
+    const message = `Hello Adila Hotel,%0A%0AI'd like to make a booking:%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ARoom: ${encodeURIComponent(roomType)}%0ACheck-in: ${checkin}%0ACheck-out: ${checkout}%0A%0APlease confirm availability and price. Thanks!`;
+    window.open(`https://wa.me/251912345678?text=${message}`, '_blank');
+  });
+</script>
+</body>
+</html>
